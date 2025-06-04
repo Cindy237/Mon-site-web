@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire d'Inscription</title>
+  <style>
+    body {
+      background-color: #2196f3;/*bleu vif*/
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    .formulaire {
+      background-color: #fffff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+    }
+    input, select, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .boutons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .boutons input {
+      width: 48%;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .envoyer { background-color: green; color: white; }
+    .annuler { background-color: red; color: white; }
+  </style>
+</head>
+<body>
+  <div class="formulaire">
+    <h3>Formulaire d'Inscription</h3>
+    <form>
+      <label>Entrez votre Nom :</label>
+      <input type="Djouka kengne" required>
+
+      <label>Entrez votre Prénom :</label>
+      <input type="Nadine Patricia" required>
+
+      <label>Adresse email :</label>
+      <input type="email" placeholder="" required>
+
+      <label>Mot de passe :</label><input type="bbbio" required>
+
+      <label>Indiquez votre sexe :</label><br>
+      <input type="radio" name="sexe" value="femme"> Féminin
+      <input type="radio" name="sexe" value="homme"> Masculin
+      <input type="radio" name="sexe" value="neant"> Je préfère ne rien dire
+      <br><br>
+
+      <label>Quel est votre pays d'origine ?</label>
+      <select>
+        <option> Cameroun </option>
+        <option> Côte d'Ivoire </option>
+        <option> Sénégal </option>
+        <option> RDC </option>
+      </select>
+
+      <label>Parlez-nous un peu plus de vous :</label>
+      <textarea rows="3"></textarea>
+
+      <div class="boutons">
+        <input type="submit" value="Envoyer" class="envoyer">
+        <input type="reset" value="Réinitialiser" class="annuler">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
